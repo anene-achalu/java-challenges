@@ -1,6 +1,6 @@
 # Java Challenges Repository
 
-This repository contains a collection of Java coding challenges and exercises covering various fundamental concepts such as control flow, string manipulation, exception handling, and object-oriented programming.
+This repository contains a collection of Java coding challenges and exercises covering various fundamental concepts such as control flow, string manipulation, exception handling, object-oriented programming, and JavaFX.
 
 ## Projects
 
@@ -24,6 +24,15 @@ This repository contains a collection of Java coding challenges and exercises co
 *   **Location:** [Chapter2_Challenge_Applett-main](./Chapter2_Challenge_Applett-main)
 *   **Description:** A skeleton project structure for a future challenge application.
 
+### 6. JavaFX Hello World (Chapter 3)
+*   **Location:** [ch3](./ch3)
+*   **Description:** A basic JavaFX application generated with a standard "Hello World" template. It features a window with a button that updates a label when clicked, demonstrating the basic structure of a JavaFX FXML application.
+
+### 7. JavaFX Hello World (Chapter 4)
+*   **Location:** [ch4](./ch4)
+*   **Description:** A basic JavaFX application similar to Chapter 3, serving as a starting point for further JavaFX development. It includes the standard application class, controller, and FXML setup.
+
 ## Technologies
 *   Java
+*   JavaFX
 *   Maven / NetBeans Project Structures
