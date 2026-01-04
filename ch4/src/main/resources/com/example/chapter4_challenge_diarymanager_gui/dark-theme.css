@@ -1,0 +1,21 @@
+.root {
+    -fx-base: #333333;
+}
+
+.text-area {
+    -fx-text-fill: #ffffff;
+    -fx-control-inner-background: #444444;
+}
+
+.list-view {
+    -fx-control-inner-background: #444444;
+}
+
+.list-cell {
+    -fx-text-fill: #ffffff;
+}
+
+.button, .menu-bar, .menu, .menu-item {
+    -fx-base: #555555;
+    -fx-text-fill: #ffffff;
+}

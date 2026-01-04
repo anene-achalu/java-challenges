@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.web.HTMLEditor?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ProgressIndicator?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chapter4_challenge_diarymanager_gui.DiaryManagerController">
+    <top>
+        <MenuBar>
+            <menus>
+                <Menu text="File">
+                    <items>
+                        <MenuItem text="New Entry" onAction="#handleNewEntry"/>
+                        <MenuItem text="Save Entry" onAction="#handleSaveEntry"/>
+                        <MenuItem text="Delete Entry" onAction="#handleDeleteEntry"/>
+                        <MenuItem text="Exit" onAction="#handleExit"/>
+                    </items>
+                </Menu>
+                <Menu text="Theme">
+                    <items>
+                        <MenuItem text="Light Mode" onAction="#handleLightTheme"/>
+                        <MenuItem text="Dark Mode" onAction="#handleDarkMode"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <left>
+        <VBox spacing="10" style="-fx-padding: 10;">
+            <HBox spacing="5">
+                <TextField fx:id="searchField" promptText="Search entries..."/>
+                <Button text="Search" onAction="#handleSearch"/>
+            </HBox>
+            <ListView fx:id="entryListView"/>
+            <ProgressIndicator fx:id="progressIndicator" visible="false"/>
+        </VBox>
+    </left>
+    <center>
+        <HTMLEditor fx:id="entryHTMLEditor" />
+    </center>
+</BorderPane>
