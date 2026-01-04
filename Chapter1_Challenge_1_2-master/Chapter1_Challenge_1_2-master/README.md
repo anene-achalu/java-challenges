@@ -1,28 +1,21 @@
-# Challenge 1.2: The Lottery Number Analyzer (Arrays & Strings)
+# Lottery Number Analyzer
 
-## Problem Description
-This program analyzes an array of lottery ticket strings. Each ticket is a string containing 10 digits separated by dashes (e.g., "12-34-56-78-90").
+This Java program analyzes a set of lottery ticket numbers to determine the "winning" ticket based on the highest average digit value.
 
-The program performs the following steps for each ticket:
-1. Removes the dashes to isolate the 10 digits.
-2. Uses a **standard `for` loop** to calculate the **sum of all 10 digits** on the ticket.
-3. Calculates the **average** of the digits (Sum / 10).
-4. Uses a **`for-each` loop** to iterate over all tickets and determine which one has the **highest average digit value**.
+## Functionality
 
-## Example Input/Output
-| Ticket String | Clean Digits | Sum of Digits | Digit Average |
-| :--- | :--- | :--- | :--- |
-| `12-34-56-78-90` | `1234567890` | 45 | 4.5 |
-| `33-44-11-66-22` | `3344116622` | 32 | 3.2 |
-| `01-02-03-04-05` | `0102030405` | 15 | 1.5 |
+1.  **Input:** Initializes an array of lottery ticket strings (e.g., "12-34-56-78-90").
+2.  **Processing:**
+    *   Iterates through each ticket string.
+    *   Removes separators (dashes) to isolate the digits.
+    *   Calculates the sum of all digits in the ticket.
+    *   Calculates the average value of the digits.
+3.  **Comparison:** Tracks the ticket with the highest calculated average.
+4.  **Output:** Displays the analysis for each ticket and announces the overall winning ticket with its average.
 
-**Final Expected Output:**
-The overall WINNING TICKET is: 12-34-56-78-90
-With the Highest Average: 4.5
+## Key Concepts
 
-## Reflection
-This challenge successfully demonstrated the use of both repetition structures required: the **`for-each` loop** was used to iterate through the array of `String` tickets, and the **standard `for` loop** was necessary to iterate through the `char` array of digits within each ticket.
-
-The most valuable lessons were:
-1. **String Manipulation:** Using methods like `.replace()` and `.toCharArray()` to easily convert the raw data into a usable array of digits.
-2. **Type Conversion:** Using `Character.getNumericValue()` to safely convert a `char` (like '5') into its `int` value (5).
+*   String manipulation (`replace`, `toCharArray`)
+*   Loops (for-each, standard for loop)
+*   Character to integer conversion
+*   Floating-point arithmetic for averages
